@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для оплаты товаров магазина</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section class="content">
+    <div class="form-pay">
+        <h1>Форма для оплаты товаров магазина</h1>
+        <form action="payment.php" method="post" id="pay-form">
+            <div class="form-line">
+                <input type="text" name="name" class="form-input" placeholder="Введите ФИО"
+                       style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"
+                       required>
+                <input type="tel" name="phone" class="form-input" id="phone-num"
+                       placeholder="Введите телефон для связи" required="">
+
+                <input type="tel" name="amount" class="form-input" placeholder="Введите сумму для оплаты" required>
+            </div>
+            <button class="site-button" type="submit">Оплатить</button>
+            <div class="confirm-block">
+                <label>
+                    <input type="checkbox" name="confirm" class="form-input" checked="checked" required="">
+                    <span class="checkbox-custom"></span>
+                    <span class="small-text">Нажимая кнопку "Оплатить" вы соглашаетесь c <a href="politics.html" target="_blank" title="Политика конфиденциальности">политикой конфиденциальности</a></span>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="info">
+        <span class="right-side"><a href="politics.html" target="_blank" title="Политика конфиденциальности">Политика конфиденциальности</a></span>
+        <span class="left-side">Уткин И.С. ОГРНИП 316265100183339 ИНН 262409812707</span>
+    </div>
+</section>
+</body>
+</html>
